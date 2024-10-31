@@ -1,0 +1,20 @@
+.resize-container {
+  container-type: inline-size;
+}
+
+.product-card {
+  /* SMALL */
+  @container (max-width: 200px) {
+    color: red;
+  }
+
+  /* MEDIUM */
+  @container (min-width: 201px) and (max-width: 299px) {
+    color: blue;
+  }
+
+  /* LARGE */
+  @container (min-width: 300px) {
+    color: yellow;
+  }
+}
